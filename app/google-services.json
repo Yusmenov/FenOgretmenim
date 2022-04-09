@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "298185388727",
+    "project_id": "fenogretmenim-fe7d6",
+    "storage_bucket": "fenogretmenim-fe7d6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:298185388727:android:ad402ee542e9f80e0f5332",
+        "android_client_info": {
+          "package_name": "com.erkankaraduman.fenogretmenm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "298185388727-rrujr100vhgemf5061a28n0776m9a16q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2TerlaQzobj46I8WrUSN9NMbYKGviWbw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "298185388727-rrujr100vhgemf5061a28n0776m9a16q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -5,40 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/grey_001"
-    tools:context=".fragments.LoginFragment">
-
-
-    <Button
-        android:id="@+id/giriskayitol"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="145dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="145dp"
-        android:background="@drawable/girisbutonarkapaln"
-        android:text="Kayıt Ol"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/girisbutonu" />
+    tools:context=".fragments.KayitOl">
 
     <EditText
-        android:id="@+id/giriskullaniciadi"
-        android:layout_width="0dp"
+        android:id="@+id/kayitemail"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="200dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/edittextarkaplan"
         android:drawableLeft="@drawable/kullanicilogo"
-        android:hint="Kullanıcı Adı"
+        android:hint="Kullanıcı Adı Oluşturunuz"
         android:textColorHint="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/girissifre"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/girissifre"
+        android:id="@+id/kayitsifre"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
@@ -50,31 +35,30 @@
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/giriskullaniciadi" />
-
-    <TextView
-        android:id="@+id/girissifremiunuttum"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="32dp"
-        android:background="@color/grey_002"
-        android:text="Şifremi Unuttum"
-        android:textColorHint="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/girissifre" />
+        app:layout_constraintTop_toBottomOf="@+id/kayitemail" />
 
     <Button
-        android:id="@+id/girisbutonu"
-        android:layout_width="120dp"
+        android:id="@+id/kayitbuton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="145dp"
+        android:text="Kayıt Ol"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kayitsifre" />
+
+    <Button
+        android:id="@+id/kayitgeridonbuton"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="145dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="145dp"
-        android:background="@drawable/girisbutonarkapaln"
-        android:text="Giriş"
+        android:text="Geri Dön"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/girissifremiunuttum" />
+        app:layout_constraintTop_toBottomOf="@+id/kayitbuton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

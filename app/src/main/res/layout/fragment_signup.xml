@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/grey_001"
-    tools:context=".fragments.KayitOl">
+    tools:context=".fragments.SignUpFragment">
 
     <EditText
         android:id="@+id/kayitemail"

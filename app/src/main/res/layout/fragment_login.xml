@@ -4,19 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gear_wheel"
+    android:background="@color/white"
     tools:context=".fragments.LoginFragment">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="#99000000">
+        >
 
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieAnimationView"
+            android:layout_marginTop="80dp"
+            android:layout_width="280dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/brain_lottie"
+            tools:ignore="MissingConstraints" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_marginTop="250dp"
+            android:layout_marginTop="30dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             android:background="@drawable/button_background">
@@ -27,11 +37,11 @@
                 android:hint="E-mail"
                 android:inputType="textEmailAddress"
                 android:background="@drawable/emptiy_edittext"
-                android:drawableLeft="@drawable/kullanicilogo"
+                android:drawableLeft="@drawable/user_email_logo"
                 android:visibility="visible"
                 android:layout_gravity="center"
-                android:textColor="@color/white"
-                android:textColorHint="@color/white"
+                android:textColor="@color/atomic_color"
+                android:textColorHint="@color/atomic_color"
                 android:layout_marginStart="5dp"
                 android:textSize="15sp"
                 app:rippleColor="#33AAAAAA"
@@ -51,51 +61,57 @@
                 android:layout_height="match_parent"
                 android:hint="Şifre"
                 android:background="@drawable/emptiy_edittext"
+                android:drawableLeft="@drawable/user_pass_logo"
                 android:inputType="textEmailAddress"
-                android:drawableLeft="@drawable/sifrelogo"
                 android:visibility="visible"
                 android:layout_gravity="center"
-                android:textColor="@color/white"
-                android:textColorHint="@color/white"
+                android:textColor="@color/atomic_color"
+                android:textColorHint="@color/atomic_color"
                 android:layout_marginStart="5dp"
                 android:textSize="15sp"
                 app:rippleColor="#33AAAAAA"
                 app:strokeColor="@color/white"
                 app:strokeWidth="2dp" />
         </LinearLayout>
-    <TextView
-        android:id="@+id/girissifremiunuttum"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="32dp"
-        android:background="@color/grey_002"
-        android:text="Şifremi Unuttum"
-        android:textColorHint="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/girissifre" />
+
+        <TextView
+            android:id="@+id/girissifremiunuttum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/atomic_color"
+            android:textColorHint="@color/atomic_color"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="280dp"
+            android:text="Şifremi Unuttum"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/girissifre" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/girisbutonu"
-            android:layout_width="120dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="145dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="70dp"
             android:layout_marginTop="20dp"
-            android:layout_marginEnd="145dp"
-            android:background="@drawable/girisbutonarkapaln"
+            android:background="@drawable/button_background"
+            android:textColor="@color/atomic_color"
+            android:textColorHint="@color/atomic_color"
             android:text="Giriş"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/girissifremiunuttum" />
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/giriskayitol"
-            android:layout_width="120dp"
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tw_signup"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="145dp"
             android:layout_marginTop="20dp"
-            android:layout_marginEnd="145dp"
-            android:background="@drawable/girisbutonarkapaln"
-            android:text="Kayıt Ol"
+            android:layout_marginEnd="70dp"
+            android:layout_marginStart="70dp"
+            android:gravity="center"
+            android:text="Hesabın yok mu? Kayıt ol"
+            android:textColor="@color/atomic_color"
+            android:textColorHint="@color/atomic_color"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/girisbutonu" />

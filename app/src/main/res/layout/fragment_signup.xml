@@ -4,61 +4,158 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/grey_001"
+    android:background="@color/white"
     tools:context=".fragments.SignUpFragment">
 
-    <EditText
-        android:id="@+id/kayitemail"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginEnd="32dp"
-        android:background="@drawable/edittextarkaplan"
-        android:drawableLeft="@drawable/kullanicilogo"
-        android:hint="Kullanıcı Adı Oluşturunuz"
-        android:textColorHint="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:animateLayoutChanges="true"
+        >
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieAnimationView"
+            android:layout_marginTop="20dp"
+            android:layout_width="280dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/wind"
+            tools:ignore="MissingConstraints" />
 
-    <EditText
-        android:id="@+id/kayitsifre"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="32dp"
-        android:background="@drawable/edittextarkaplan"
-        android:drawableLeft="@drawable/sifrelogo"
-        android:hint="Şifreniz"
-        android:textColorHint="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/kayitemail" />
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_background">
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Ad:"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/emptiy_edittext"
+                android:inputType="textEmailAddress"
+                android:visibility="visible"
+                android:layout_gravity="center"
+                android:textColor="@color/atomic_color"
+                android:textColorHint="@color/atomic_color"
+                android:textSize="15sp"
+                app:rippleColor="#33AAAAAA"
+                app:strokeColor="@color/white"
+                app:strokeWidth="2dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_background">
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_surname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Soyad:"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/emptiy_edittext"
+                android:inputType="textEmailAddress"
+                android:visibility="visible"
+                android:layout_gravity="center"
+                android:textColor="@color/atomic_color"
+                android:textColorHint="@color/atomic_color"
+                android:textSize="15sp"
+                app:rippleColor="#33AAAAAA"
+                app:strokeColor="@color/white"
+                app:strokeWidth="2dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_background">
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="E-mail:"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/emptiy_edittext"
+                android:inputType="textEmailAddress"
+                android:visibility="visible"
+                android:layout_gravity="center"
+                android:textColor="@color/atomic_color"
+                android:textColorHint="@color/atomic_color"
+                android:textSize="15sp"
+                app:rippleColor="#33AAAAAA"
+                app:strokeColor="@color/white"
+                app:strokeWidth="2dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_background">
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/emptiy_edittext"
+                android:layout_marginStart="8dp"
+                android:hint="Lütfen en az 6 karakterli şifrenizi giriniz"
+                android:inputType="textPassword"
+                android:visibility="visible"
+                android:layout_gravity="center"
+                android:textColor="@color/atomic_color"
+                android:textColorHint="@color/atomic_color"
+                android:textSize="15sp"
+                app:rippleColor="#33AAAAAA"
+                app:strokeColor="@color/white"
+                app:strokeWidth="2dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_background">
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_password_again"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/emptiy_edittext"
+                android:hint="Lütfen şifrenizi tekrar giriniz"
+                android:layout_marginStart="8dp"
+                android:inputType="textPassword"
+                android:visibility="visible"
+                android:layout_gravity="center"
+                android:textColor="@color/atomic_color"
+                android:textColorHint="@color/atomic_color"
+                android:textSize="15sp"
+                app:rippleColor="#33AAAAAA"
+                app:strokeColor="@color/white"
+                app:strokeWidth="2dp" />
+        </LinearLayout>
 
-    <Button
-        android:id="@+id/kayitbuton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="145dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="145dp"
-        android:text="Kayıt Ol"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/kayitsifre" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/sign_up_button"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Kayıt Ol"
+            android:visibility="visible"
+            android:background="@drawable/button_background"
+            android:textColor="@color/atomic_color"
+            android:textSize="15sp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"
+            app:rippleColor="#33AAAAAA"
+            app:strokeColor="@color/white"
+            app:strokeWidth="2dp" />
 
-    <Button
-        android:id="@+id/kayitgeridonbuton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="145dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="145dp"
-        android:text="Geri Dön"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/kayitbuton" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

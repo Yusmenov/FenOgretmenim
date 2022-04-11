@@ -9,6 +9,10 @@
     <color name="white">#FFFFFFFF</color>
     <color name="grey_001">#4F4F50</color>
     <color name="grey_002">#949FA6</color>
+    <color name="atomic_color">#4CB3FF</color>
+
+
+
 
 
 </resources>

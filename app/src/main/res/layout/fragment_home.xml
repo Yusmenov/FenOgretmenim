@@ -1,14 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".fragments.HomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical"
+        android:gravity="center"
+        >
 
-</FrameLayout>
+
+        <Button
+            android:id="@+id/btn_8class"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/atomic_color"
+            android:textColorHint="@color/atomic_color"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_background"
+            android:text="8. SINIF KONU ANLATIMI" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/btn_7class"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/atomic_color"
+            android:textColorHint="@color/atomic_color"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_background"
+            android:text="7. SINIF KONU ANLATIMI"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/btn_6class"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/atomic_color"
+            android:textColorHint="@color/atomic_color"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_background"
+            android:text="6. SINIF KONU ANLATIMI"
+            />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

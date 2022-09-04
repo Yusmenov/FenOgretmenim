@@ -55,20 +55,21 @@
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             android:background="@drawable/button_background">
+
             <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/et_password"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="Şifre"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
                 android:background="@drawable/emptiy_edittext"
                 android:drawableLeft="@drawable/user_pass_logo"
-                android:inputType="textEmailAddress"
-                android:visibility="visible"
-                android:layout_gravity="center"
+                android:hint="Şifre"
+                android:inputType="textPassword"
                 android:textColor="@color/atomic_color"
                 android:textColorHint="@color/atomic_color"
-                android:layout_marginStart="5dp"
                 android:textSize="15sp"
+                android:visibility="visible"
                 app:rippleColor="#33AAAAAA"
                 app:strokeColor="@color/white"
                 app:strokeWidth="2dp" />

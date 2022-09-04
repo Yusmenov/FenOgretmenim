@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ContentsFragment"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/back_button"
+            />
+
+        <Button
+            android:id="@+id/btn_home"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/home_button" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        >
+
+        <Button
+            android:id="@+id/btn_8class"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/atomic_color"
+            android:textColorHint="@color/atomic_color"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_background"
+            android:text="Mevsimler ve iklim" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/btn_7class"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/atomic_color"
+            android:textColorHint="@color/atomic_color"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_background"
+            android:text="DNA ve Genetik Kod"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/btn_6class"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/atomic_color"
+            android:textColorHint="@color/atomic_color"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_background"
+            android:text="Basınç"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/btn_6class"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/atomic_color"
+            android:textColorHint="@color/atomic_color"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_background"
+            android:text="Madde ve endüstri"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/btn_6class"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/atomic_color"
+            android:textColorHint="@color/atomic_color"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_background"
+            android:text="Basit Makineler"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/btn_6class"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/atomic_color"
+            android:textColorHint="@color/atomic_color"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_background"
+            android:text="Enerji dönüşümleri ve çevre bilimi"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/btn_6class"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/atomic_color"
+            android:textColorHint="@color/atomic_color"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_background"
+            android:text="Elektrik Yükleri ve Elektrik Enerjisi"
+            />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

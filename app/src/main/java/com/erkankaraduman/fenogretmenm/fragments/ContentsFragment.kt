@@ -20,5 +20,7 @@ class ContentsFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_contents, container, false)
     }
 
+    private fun initView (){
 
-}
+    }
+ }

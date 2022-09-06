@@ -43,5 +43,14 @@
         android:id="@+id/contentsFragment"
         android:name="com.erkankaraduman.fenogretmenm.fragments.ContentsFragment"
         android:label="fragment_contents"
-        tools:layout="@layout/fragment_contents" />
+        tools:layout="@layout/fragment_contents" >
+        <action
+            android:id="@+id/action_contentsFragment_to_seasonsContentFragment"
+            app:destination="@id/seasonsContentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/seasonsContentFragment"
+        android:name="com.erkankaraduman.fenogretmenm.fragments.SeasonsContentFragment"
+        android:label="fragment_seasons_content"
+        tools:layout="@layout/fragment_seasons_content" />
 </navigation>
